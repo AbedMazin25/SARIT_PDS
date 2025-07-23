@@ -1,0 +1,32 @@
+2025-07-09 15:17:08,164 - INFO - Watchdog service initialized
+2025-07-09 15:17:08,164 - INFO - Target script: /home/ods/Desktop/sarit/DEMODAY/run_integrated_detection_system.sh
+2025-07-09 15:17:08,164 - INFO - Camera only mode: True
+2025-07-09 15:17:08,165 - INFO - Restart delay: 5s
+2025-07-09 15:17:08,165 - INFO - Max restarts: 1
+2025-07-09 15:17:08,165 - INFO - Starting watchdog service...
+2025-07-09 15:17:08,165 - INFO - Starting detection system: /home/ods/Desktop/sarit/DEMODAY/run_integrated_detection_system.sh --camera-only
+2025-07-09 15:17:08,170 - INFO - Detection system started with PID: 12243
+2025-07-09 15:17:08,174 - INFO - Detection: Checking dependencies...
+2025-07-09 15:17:11,077 - INFO - Detection: All dependencies verified.
+2025-07-09 15:17:14,583 - INFO - Detection: 
+2025-07-09 15:17:15,084 - INFO - Detection: ==================================================================
+2025-07-09 15:17:15,586 - INFO - Detection: INTEGRATED OAK-D DETECTION SYSTEM
+2025-07-09 15:17:16,087 - INFO - Detection: ==================================================================
+2025-07-09 15:17:16,589 - INFO - Detection: Date: Wed 09 Jul 2025 03:17:10 PM EDT
+2025-07-09 15:17:17,089 - INFO - Detection: System: Linux ods-desktop 5.10.192-tegra #1 SMP PREEMPT Mon Feb 19 20:19:53 PST 2024 aarch64 aarch64 aarch64 GNU/Linux
+2025-07-09 15:17:17,591 - INFO - Detection: Python: Python 3.8.10
+2025-07-09 15:17:18,093 - INFO - Detection: Working Directory: /home/ods/Desktop/sarit/DEMODAY
+2025-07-09 15:17:18,595 - INFO - Detection: 
+2025-07-09 15:17:19,096 - INFO - Detection: Configuration:
+2025-07-09 15:17:19,597 - INFO - Detection: • Detection Model: ssd-mobilenet-v2
+2025-07-09 15:17:20,100 - INFO - Detection: • Sound Alerts: ENABLED
+2025-07-09 15:17:20,601 - INFO - Detection: • Visual Display: ENABLED
+2025-07-09 15:17:21,102 - INFO - Detection: • Emulator Communication: DISABLED
+2025-07-09 15:17:21,603 - INFO - Detection: ==================================================================
+2025-07-09 15:17:22,104 - INFO - Detection: 
+2025-07-09 15:17:22,605 - INFO - Detection: Starting integrated detection system...
+2025-07-09 15:17:23,107 - INFO - Detection: jetson.inference -- detectNet loading custom model '(null)'
+2025-07-09 15:17:39,423 - INFO - Received signal 2, shutting down...
+2025-07-09 15:17:39,423 - INFO - Stopping detection system (PID: 12243)...
+2025-07-09 15:17:39,425 - INFO - Detection system stopped
+2025-07-09 15:17:39,829 - INFO - Watchdog service stopped

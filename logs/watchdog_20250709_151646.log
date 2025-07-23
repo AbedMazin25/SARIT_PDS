@@ -1,0 +1,8 @@
+2025-07-09 15:16:46,280 - INFO - Watchdog service initialized
+2025-07-09 15:16:46,280 - INFO - Target script: /home/ods/Desktop/sarit/DEMODAY/run_integrated_detection_system.sh
+2025-07-09 15:16:46,281 - INFO - Camera only mode: True
+2025-07-09 15:16:46,281 - INFO - Restart delay: 5s
+2025-07-09 15:16:46,281 - INFO - Max restarts: unlimited
+2025-07-09 15:16:46,281 - INFO - Starting watchdog service...
+2025-07-09 15:16:46,281 - ERROR - Maximum restart limit (0) reached
+2025-07-09 15:16:46,281 - INFO - Watchdog service stopped

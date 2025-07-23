@@ -1,0 +1,750 @@
+2025-07-09 15:28:15,779 - INFO - Watchdog service initialized
+2025-07-09 15:28:15,779 - INFO - Target script: /home/ods/Desktop/sarit/DEMODAY/run_integrated_detection_system.sh
+2025-07-09 15:28:15,779 - INFO - Camera only mode: True
+2025-07-09 15:28:15,779 - INFO - Restart delay: 5s
+2025-07-09 15:28:15,780 - INFO - Max restarts: unlimited
+2025-07-09 15:28:15,780 - INFO - Starting watchdog service...
+2025-07-09 15:28:15,780 - INFO - Starting detection system: /home/ods/Desktop/sarit/DEMODAY/run_integrated_detection_system.sh --camera-only
+2025-07-09 15:28:15,786 - INFO - Detection system started with PID: 1888
+2025-07-09 15:28:15,787 - INFO - Detection: Checking dependencies...
+2025-07-09 15:28:18,781 - INFO - Detection: All dependencies verified.
+2025-07-09 15:28:19,282 - INFO - Detection: 
+2025-07-09 15:28:23,393 - INFO - Detection: ==================================================================
+2025-07-09 15:28:23,894 - INFO - Detection: INTEGRATED OAK-D DETECTION SYSTEM
+2025-07-09 15:28:24,395 - INFO - Detection: ==================================================================
+2025-07-09 15:28:24,897 - INFO - Detection: Date: Wed 09 Jul 2025 03:28:18 PM EDT
+2025-07-09 15:28:25,397 - INFO - Detection: System: Linux ods-desktop 5.10.192-tegra #1 SMP PREEMPT Mon Feb 19 20:19:53 PST 2024 aarch64 aarch64 aarch64 GNU/Linux
+2025-07-09 15:28:25,898 - INFO - Detection: Python: Python 3.8.10
+2025-07-09 15:28:26,399 - INFO - Detection: Working Directory: /home/ods/Desktop/sarit/DEMODAY
+2025-07-09 15:28:26,901 - INFO - Detection: 
+2025-07-09 15:28:27,401 - INFO - Detection: Configuration:
+2025-07-09 15:28:27,903 - INFO - Detection: • Detection Model: ssd-mobilenet-v2
+2025-07-09 15:28:28,404 - INFO - Detection: • Sound Alerts: ENABLED
+2025-07-09 15:28:28,906 - INFO - Detection: • Visual Display: ENABLED
+2025-07-09 15:28:29,407 - INFO - Detection: • Emulator Communication: DISABLED
+2025-07-09 15:28:29,908 - INFO - Detection: ==================================================================
+2025-07-09 15:28:30,409 - INFO - Detection: 
+2025-07-09 15:28:30,910 - INFO - Detection: Starting integrated detection system...
+2025-07-09 15:28:31,411 - INFO - Detection: jetson.inference -- detectNet loading custom model '(null)'
+2025-07-09 15:32:20,551 - INFO - Detection: 
+2025-07-09 15:32:21,052 - INFO - Detection: detectNet -- loading detection network model from:
+2025-07-09 15:32:21,553 - INFO - Detection: -- model        networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff
+2025-07-09 15:32:22,054 - INFO - Detection: -- input_blob   'Input'
+2025-07-09 15:32:22,556 - INFO - Detection: -- output_blob  'NMS'
+2025-07-09 15:32:23,059 - INFO - Detection: -- output_count 'NMS_1'
+2025-07-09 15:32:23,560 - INFO - Detection: -- class_labels networks/SSD-Mobilenet-v2/ssd_coco_labels.txt
+2025-07-09 15:32:24,062 - INFO - Detection: -- threshold    0.500000
+2025-07-09 15:32:24,563 - INFO - Detection: -- batch_size   1
+2025-07-09 15:32:25,064 - INFO - Detection: 
+2025-07-09 15:32:25,565 - INFO - Detection: [TRT]    TensorRT version 8.5.2
+2025-07-09 15:32:26,066 - INFO - Detection: [TRT]    loading NVIDIA plugins...
+2025-07-09 15:32:26,567 - INFO - Detection: [TRT]    Registered plugin creator - ::BatchedNMSDynamic_TRT version 1
+2025-07-09 15:32:27,068 - INFO - Detection: [TRT]    Registered plugin creator - ::BatchedNMS_TRT version 1
+2025-07-09 15:32:27,569 - INFO - Detection: [TRT]    Registered plugin creator - ::BatchTilePlugin_TRT version 1
+2025-07-09 15:32:28,070 - INFO - Detection: [TRT]    Registered plugin creator - ::Clip_TRT version 1
+2025-07-09 15:32:28,571 - INFO - Detection: [TRT]    Registered plugin creator - ::CoordConvAC version 1
+2025-07-09 15:32:29,073 - INFO - Detection: [TRT]    Registered plugin creator - ::CropAndResizeDynamic version 1
+2025-07-09 15:32:29,573 - INFO - Detection: [TRT]    Registered plugin creator - ::CropAndResize version 1
+2025-07-09 15:32:30,075 - INFO - Detection: [TRT]    Registered plugin creator - ::DecodeBbox3DPlugin version 1
+2025-07-09 15:32:30,576 - INFO - Detection: [TRT]    Registered plugin creator - ::DetectionLayer_TRT version 1
+2025-07-09 15:32:31,077 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_Explicit_TF_TRT version 1
+2025-07-09 15:32:31,578 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_Implicit_TF_TRT version 1
+2025-07-09 15:32:32,080 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_ONNX_TRT version 1
+2025-07-09 15:32:32,581 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_TRT version 1
+2025-07-09 15:32:33,082 - INFO - Detection: [0;31m[TRT]    Could not register plugin creator -  ::FlattenConcat_TRT version 1
+2025-07-09 15:32:33,583 - INFO - Detection: [0m[TRT]    Registered plugin creator - ::GenerateDetection_TRT version 1
+2025-07-09 15:32:34,084 - INFO - Detection: [TRT]    Registered plugin creator - ::GridAnchor_TRT version 1
+2025-07-09 15:32:34,586 - INFO - Detection: [TRT]    Registered plugin creator - ::GridAnchorRect_TRT version 1
+2025-07-09 15:32:35,087 - INFO - Detection: [TRT]    Registered plugin creator - ::GroupNorm version 1
+2025-07-09 15:32:35,588 - INFO - Detection: [TRT]    Registered plugin creator - ::InstanceNormalization_TRT version 1
+2025-07-09 15:32:36,089 - INFO - Detection: [TRT]    Registered plugin creator - ::InstanceNormalization_TRT version 2
+2025-07-09 15:32:36,590 - INFO - Detection: [TRT]    Registered plugin creator - ::LayerNorm version 1
+2025-07-09 15:32:37,091 - INFO - Detection: [TRT]    Registered plugin creator - ::LReLU_TRT version 1
+2025-07-09 15:32:37,593 - INFO - Detection: [TRT]    Registered plugin creator - ::MultilevelCropAndResize_TRT version 1
+2025-07-09 15:32:38,094 - INFO - Detection: [TRT]    Registered plugin creator - ::MultilevelProposeROI_TRT version 1
+2025-07-09 15:32:38,595 - INFO - Detection: [TRT]    Registered plugin creator - ::MultiscaleDeformableAttnPlugin_TRT version 1
+2025-07-09 15:32:39,096 - INFO - Detection: [TRT]    Registered plugin creator - ::NMSDynamic_TRT version 1
+2025-07-09 15:32:39,597 - INFO - Detection: [TRT]    Registered plugin creator - ::NMS_TRT version 1
+2025-07-09 15:32:40,098 - INFO - Detection: [TRT]    Registered plugin creator - ::Normalize_TRT version 1
+2025-07-09 15:32:40,599 - INFO - Detection: [TRT]    Registered plugin creator - ::PillarScatterPlugin version 1
+2025-07-09 15:32:41,100 - INFO - Detection: [TRT]    Registered plugin creator - ::PriorBox_TRT version 1
+2025-07-09 15:32:41,602 - INFO - Detection: [TRT]    Registered plugin creator - ::ProposalDynamic version 1
+2025-07-09 15:32:42,103 - INFO - Detection: [TRT]    Registered plugin creator - ::ProposalLayer_TRT version 1
+2025-07-09 15:32:42,604 - INFO - Detection: [TRT]    Registered plugin creator - ::Proposal version 1
+2025-07-09 15:32:43,106 - INFO - Detection: [TRT]    Registered plugin creator - ::PyramidROIAlign_TRT version 1
+2025-07-09 15:32:43,607 - INFO - Detection: [TRT]    Registered plugin creator - ::Region_TRT version 1
+2025-07-09 15:32:44,108 - INFO - Detection: [TRT]    Registered plugin creator - ::Reorg_TRT version 1
+2025-07-09 15:32:44,609 - INFO - Detection: [TRT]    Registered plugin creator - ::ResizeNearest_TRT version 1
+2025-07-09 15:32:45,110 - INFO - Detection: [TRT]    Registered plugin creator - ::ROIAlign_TRT version 1
+2025-07-09 15:32:45,612 - INFO - Detection: [TRT]    Registered plugin creator - ::RPROI_TRT version 1
+2025-07-09 15:32:46,113 - INFO - Detection: [TRT]    Registered plugin creator - ::ScatterND version 1
+2025-07-09 15:32:46,614 - INFO - Detection: [TRT]    Registered plugin creator - ::SeqLen2Spatial version 1
+2025-07-09 15:32:47,115 - INFO - Detection: [TRT]    Registered plugin creator - ::SpecialSlice_TRT version 1
+2025-07-09 15:32:47,616 - INFO - Detection: [TRT]    Registered plugin creator - ::SplitGeLU version 1
+2025-07-09 15:32:48,117 - INFO - Detection: [TRT]    Registered plugin creator - ::Split version 1
+2025-07-09 15:32:48,618 - INFO - Detection: [TRT]    Registered plugin creator - ::VoxelGeneratorPlugin version 1
+2025-07-09 15:32:49,119 - INFO - Detection: [TRT]    completed loading NVIDIA plugins.
+2025-07-09 15:32:49,621 - INFO - Detection: [TRT]    detected model format - UFF  (extension '.uff')
+2025-07-09 15:32:50,122 - INFO - Detection: [TRT]    desired precision specified for GPU: FASTEST
+2025-07-09 15:32:50,623 - INFO - Detection: [0;33m[TRT]    requested fasted precision for device GPU without providing valid calibrator, disabling INT8
+2025-07-09 15:32:51,124 - INFO - Detection: [0m[TRT]    [MemUsageChange] Init CUDA: CPU +241, GPU +0, now: CPU 331, GPU 2122 (MiB)
+2025-07-09 15:32:51,626 - INFO - Detection: [TRT]    Trying to load shared library libnvinfer_builder_resource.so.8.5.2
+2025-07-09 15:32:52,127 - INFO - Detection: [TRT]    Loaded shared library libnvinfer_builder_resource.so.8.5.2
+2025-07-09 15:32:52,628 - INFO - Detection: [TRT]    [MemUsageChange] Init builder kernel library: CPU +302, GPU +563, now: CPU 656, GPU 2848 (MiB)
+2025-07-09 15:32:53,129 - INFO - Detection: [TRT]    native precisions detected for GPU:  FP32, FP16, INT8
+2025-07-09 15:32:53,631 - INFO - Detection: [TRT]    selecting fastest native precision for GPU:  FP16
+2025-07-09 15:32:54,132 - INFO - Detection: [TRT]    found engine cache file /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.1.1.8502.GPU.FP16.engine
+2025-07-09 15:32:54,633 - INFO - Detection: [TRT]    found model checksum /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.sha256sum
+2025-07-09 15:32:55,134 - INFO - Detection: [TRT]    echo "$(cat /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.sha256sum) /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff" | sha256sum --check --status
+2025-07-09 15:32:55,636 - INFO - Detection: [TRT]    model matched checksum /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.sha256sum
+2025-07-09 15:32:56,137 - INFO - Detection: [TRT]    loading network plan from engine cache... /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.1.1.8502.GPU.FP16.engine
+2025-07-09 15:32:56,638 - INFO - Detection: [0;32m[TRT]    device GPU, loaded /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff
+2025-07-09 15:32:57,139 - INFO - Detection: [0m[TRT]    Loaded engine size: 33 MiB
+2025-07-09 15:32:57,640 - INFO - Detection: [0;33m[TRT]    Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+2025-07-09 15:32:58,142 - INFO - Detection: [0m[TRT]    Trying to load shared library libcublas.so.11
+2025-07-09 15:32:58,643 - INFO - Detection: [TRT]    Loaded shared library libcublas.so.11
+2025-07-09 15:32:59,144 - INFO - Detection: [TRT]    Using cublas as plugin tactic source
+2025-07-09 15:32:59,644 - INFO - Detection: [TRT]    Trying to load shared library libcublasLt.so.11
+2025-07-09 15:33:00,146 - INFO - Detection: [TRT]    Loaded shared library libcublasLt.so.11
+2025-07-09 15:33:00,647 - INFO - Detection: [TRT]    Using cublasLt as core library tactic source
+2025-07-09 15:33:01,148 - INFO - Detection: [TRT]    [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +534, GPU +587, now: CPU 946, GPU 3474 (MiB)
+2025-07-09 15:33:01,649 - INFO - Detection: [TRT]    Trying to load shared library libcudnn.so.8
+2025-07-09 15:33:02,150 - INFO - Detection: [TRT]    Loaded shared library libcudnn.so.8
+2025-07-09 15:33:02,651 - INFO - Detection: [TRT]    Using cuDNN as plugin tactic source
+2025-07-09 15:33:03,153 - INFO - Detection: [TRT]    Using cuDNN as core library tactic source
+2025-07-09 15:33:03,654 - INFO - Detection: [TRT]    [MemUsageChange] Init cuDNN: CPU +82, GPU +109, now: CPU 1028, GPU 3583 (MiB)
+2025-07-09 15:33:04,155 - INFO - Detection: [TRT]    Deserialization required 2150401 microseconds.
+2025-07-09 15:33:04,656 - INFO - Detection: [TRT]    [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +32, now: CPU 0, GPU 32 (MiB)
+2025-07-09 15:33:05,157 - INFO - Detection: [TRT]    Trying to load shared library libcublas.so.11
+2025-07-09 15:33:05,659 - INFO - Detection: [TRT]    Loaded shared library libcublas.so.11
+2025-07-09 15:33:06,160 - INFO - Detection: [TRT]    Using cublas as plugin tactic source
+2025-07-09 15:33:06,661 - INFO - Detection: [TRT]    Trying to load shared library libcublasLt.so.11
+2025-07-09 15:33:07,163 - INFO - Detection: [TRT]    Loaded shared library libcublasLt.so.11
+2025-07-09 15:33:07,664 - INFO - Detection: [TRT]    Using cublasLt as core library tactic source
+2025-07-09 15:33:08,165 - INFO - Detection: [TRT]    [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +3, now: CPU 1029, GPU 3601 (MiB)
+2025-07-09 15:33:08,666 - INFO - Detection: [TRT]    Trying to load shared library libcudnn.so.8
+2025-07-09 15:33:09,167 - INFO - Detection: [TRT]    Loaded shared library libcudnn.so.8
+2025-07-09 15:33:09,668 - INFO - Detection: [TRT]    Using cuDNN as plugin tactic source
+2025-07-09 15:33:10,170 - INFO - Detection: [TRT]    Using cuDNN as core library tactic source
+2025-07-09 15:33:10,671 - INFO - Detection: [TRT]    [MemUsageChange] Init cuDNN: CPU +0, GPU +1, now: CPU 1029, GPU 3602 (MiB)
+2025-07-09 15:33:11,172 - INFO - Detection: [TRT]    Total per-runner device persistent memory is 3072
+2025-07-09 15:33:11,673 - INFO - Detection: [TRT]    Total per-runner host persistent memory is 160912
+2025-07-09 15:33:12,174 - INFO - Detection: [TRT]    Allocated activation device memory of size 7004672
+2025-07-09 15:33:12,675 - INFO - Detection: [TRT]    [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +7, now: CPU 0, GPU 39 (MiB)
+2025-07-09 15:33:13,176 - INFO - Detection: [TRT]
+2025-07-09 15:33:13,678 - INFO - Detection: [TRT]    CUDA engine context initialized on device GPU:
+2025-07-09 15:33:14,179 - INFO - Detection: [TRT]       -- layers       105
+2025-07-09 15:33:14,680 - INFO - Detection: [TRT]       -- maxBatchSize 1
+2025-07-09 15:33:15,181 - INFO - Detection: [TRT]       -- deviceMemory 7004672
+2025-07-09 15:33:15,682 - INFO - Detection: [TRT]       -- bindings     3
+2025-07-09 15:33:16,183 - INFO - Detection: [TRT]       binding 0
+2025-07-09 15:33:16,684 - INFO - Detection: -- index   0
+2025-07-09 15:33:17,186 - INFO - Detection: -- name    'Input'
+2025-07-09 15:33:17,687 - INFO - Detection: -- type    FP32
+2025-07-09 15:33:18,188 - INFO - Detection: -- in/out  INPUT
+2025-07-09 15:33:18,689 - INFO - Detection: -- # dims  3
+2025-07-09 15:33:19,191 - INFO - Detection: -- dim #0  3
+2025-07-09 15:33:19,692 - INFO - Detection: -- dim #1  300
+2025-07-09 15:33:20,193 - INFO - Detection: -- dim #2  300
+2025-07-09 15:33:20,695 - INFO - Detection: [TRT]       binding 1
+2025-07-09 15:33:21,196 - INFO - Detection: -- index   1
+2025-07-09 15:33:21,698 - INFO - Detection: -- name    'NMS'
+2025-07-09 15:33:22,199 - INFO - Detection: -- type    FP32
+2025-07-09 15:33:22,700 - INFO - Detection: -- in/out  OUTPUT
+2025-07-09 15:33:23,202 - INFO - Detection: -- # dims  3
+2025-07-09 15:33:23,703 - INFO - Detection: -- dim #0  1
+2025-07-09 15:33:24,204 - INFO - Detection: -- dim #1  100
+2025-07-09 15:33:24,706 - INFO - Detection: -- dim #2  7
+2025-07-09 15:33:25,207 - INFO - Detection: [TRT]       binding 2
+2025-07-09 15:33:25,708 - INFO - Detection: -- index   2
+2025-07-09 15:33:26,209 - INFO - Detection: -- name    'NMS_1'
+2025-07-09 15:33:26,710 - INFO - Detection: -- type    FP32
+2025-07-09 15:33:27,211 - INFO - Detection: -- in/out  OUTPUT
+2025-07-09 15:33:27,713 - INFO - Detection: -- # dims  3
+2025-07-09 15:33:28,214 - INFO - Detection: -- dim #0  1
+2025-07-09 15:33:28,714 - INFO - Detection: -- dim #1  1
+2025-07-09 15:33:29,215 - INFO - Detection: -- dim #2  1
+2025-07-09 15:33:29,716 - INFO - Detection: [TRT]
+2025-07-09 15:33:30,218 - INFO - Detection: [TRT]    binding to input 0 Input  binding index:  0
+2025-07-09 15:33:30,719 - INFO - Detection: [TRT]    binding to input 0 Input  dims (b=1 c=3 h=300 w=300) size=1080000
+2025-07-09 15:33:31,220 - INFO - Detection: [TRT]    binding topygame 2.6.1 (SDL 2.28.4, Python 3.8.10)
+2025-07-09 15:36:28,347 - INFO - Detection: Hello from the pygame community. https://www.pygame.org/contribute.html
+2025-07-09 15:36:28,849 - INFO - Detection: Loading detection model: ssd-mobilenet-v2
+2025-07-09 15:36:29,350 - INFO - Detection: Sound system initialized
+2025-07-09 15:36:29,851 - INFO - Detection: 
+2025-07-09 15:36:30,352 - INFO - Detection: ============================================================
+2025-07-09 15:36:30,853 - INFO - Detection: INTEGRATED OAK-D DETECTION SYSTEM
+2025-07-09 15:36:31,354 - INFO - Detection: ============================================================
+2025-07-09 15:36:31,855 - INFO - Detection: • Object Detection: ssd-mobilenet-v2
+2025-07-09 15:36:32,356 - INFO - Detection: • Sound Alerts: ENABLED
+2025-07-09 15:36:32,857 - INFO - Detection: • Emulator Communication: DISABLED
+2025-07-09 15:36:33,359 - INFO - Detection: • Display Output: ENABLED
+2025-07-09 15:36:33,860 - INFO - Detection: • UVC Output: ENABLED
+2025-07-09 15:36:34,361 - INFO - Detection: ============================================================
+2025-07-09 15:36:34,862 - INFO - Detection: System running... Press 'q' to quit
+2025-07-09 15:36:35,363 - INFO - Detection: FPS: 11 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:35,864 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:36,365 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:36,867 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:37,368 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:37,869 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:38,370 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:38,872 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:39,373 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:39,874 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:40,375 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:40,876 - INFO - Detection: FPS: 56 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:41,377 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:41,878 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:42,379 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:42,881 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:43,382 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:43,883 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:44,384 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:44,885 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:45,386 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:45,887 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:46,388 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:46,889 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:47,390 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:47,892 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:48,393 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:48,894 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:49,395 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:49,897 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:50,398 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:50,899 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:51,400 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:51,902 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:52,403 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:52,904 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:53,405 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:53,907 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:54,408 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:54,909 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:55,410 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:55,911 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:56,413 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:56,914 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:57,415 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:57,916 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:58,417 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:58,918 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:59,420 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:36:59,921 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:00,422 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:00,923 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:01,424 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:01,925 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:02,426 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:02,928 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:03,430 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:03,931 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:04,432 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:04,933 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:05,435 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:05,936 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:06,437 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:06,938 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:07,440 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:07,941 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:08,442 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:08,943 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:09,444 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:09,945 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:10,446 - INFO - Detection: FPS: 31 | Objects: 1 | Sound: ON
+2025-07-09 15:37:10,947 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:11,448 - INFO - Detection: FPS: 30 | Objects: 1 | Sound: ON
+2025-07-09 15:37:11,949 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:12,450 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:12,952 - INFO - Detection: FPS: 31 | Objects: 1 | Sound: ON
+2025-07-09 15:37:13,452 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:13,954 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:14,455 - INFO - Detection: FPS: 30 | Objects: 1 | Sound: ON
+2025-07-09 15:37:14,956 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:15,457 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:15,958 - INFO - Detection: FPS: 31 | Objects: 1 | Sound: ON
+2025-07-09 15:37:16,459 - INFO - Detection: FPS: 30 | Objects: 1 | Sound: ON
+2025-07-09 15:37:16,960 - INFO - Detection: FPS: 30 | Objects: 1 | Sound: ON
+2025-07-09 15:37:17,462 - INFO - Detection: FPS: 31 | Objects: 1 | Sound: ON
+2025-07-09 15:37:17,963 - INFO - Detection: FPS: 30 | Objects: 2 | Sound: ON
+2025-07-09 15:37:18,464 - INFO - Detection: FPS: 31 | Objects: 1 | Sound: ON
+2025-07-09 15:37:18,965 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:19,466 - INFO - Detection: FPS: 30 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:19,967 - INFO - Detection: FPS: 31 | Objects: 0 | Sound: OFF
+2025-07-09 15:37:20,469 - INFO - Detection: FPS: 31 | Objects: 1 | Sound: ON
+2025-07-09 15:37:20,970 - WARNING - Detection system terminated with code 0 after 545.2s
+2025-07-09 15:37:20,971 - INFO - Final output: FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 1 | Sound: ON
+FPS: 31 | Objects: 1 | Sound: ON
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 31 | Objects: 0 | Sound: OFF
+FPS: 30 | Objects: 0 | Sound: OFF
+System shutdown complete.
+ output 0 NMS  binding index:  1
+[TRT]    binding to output 0 NMS  dims (b=1 c=1 h=100 w=7) size=2800
+[TRT]    binding to output 1 NMS_1  binding index:  2
+[TRT]    binding to output 1 NMS_1  dims (b=1 c=1 h=1 w=1) size=4
+[TRT]    
+[0;32m[TRT]    device GPU, /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff initialized.
+[0m[TRT]    W = 7  H = 100  C = 1
+[TRT]    detectNet -- maximum bounding boxes:   100
+[TRT]    loaded 91 class labels
+[TRT]    detectNet -- number of object classes:  91
+[TRT]    loaded 0 class colors
+[0;33m[TRT]    didn't load expected number of class colors  (0 of 91)
+[0m[0;33m[TRT]    filling in remaining 91 class colors with default colors
+[0m
+System stopped.
+System shutdown complete.
+2025-07-09 15:37:20,971 - INFO - Waiting 5s before restart #2...
+2025-07-09 15:37:25,976 - INFO - Starting detection system: /home/ods/Desktop/sarit/DEMODAY/run_integrated_detection_system.sh --camera-only
+2025-07-09 15:37:25,979 - INFO - Detection system started with PID: 3931
+2025-07-09 15:37:25,983 - INFO - Detection: Checking dependencies...
+2025-07-09 15:37:28,287 - INFO - Detection: All dependencies verified.
+2025-07-09 15:37:32,393 - INFO - Detection: 
+2025-07-09 15:37:32,894 - INFO - Detection: ==================================================================
+2025-07-09 15:37:33,395 - INFO - Detection: INTEGRATED OAK-D DETECTION SYSTEM
+2025-07-09 15:37:33,896 - INFO - Detection: ==================================================================
+2025-07-09 15:37:34,397 - INFO - Detection: Date: Wed 09 Jul 2025 03:37:28 PM EDT
+2025-07-09 15:37:34,898 - INFO - Detection: System: Linux ods-desktop 5.10.192-tegra #1 SMP PREEMPT Mon Feb 19 20:19:53 PST 2024 aarch64 aarch64 aarch64 GNU/Linux
+2025-07-09 15:37:35,400 - INFO - Detection: Python: Python 3.8.10
+2025-07-09 15:37:35,901 - INFO - Detection: Working Directory: /home/ods/Desktop/sarit/DEMODAY
+2025-07-09 15:37:36,402 - INFO - Detection: 
+2025-07-09 15:37:36,903 - INFO - Detection: Configuration:
+2025-07-09 15:37:37,404 - INFO - Detection: • Detection Model: ssd-mobilenet-v2
+2025-07-09 15:37:37,905 - INFO - Detection: • Sound Alerts: ENABLED
+2025-07-09 15:37:38,406 - INFO - Detection: • Visual Display: ENABLED
+2025-07-09 15:37:38,907 - INFO - Detection: • Emulator Communication: DISABLED
+2025-07-09 15:37:39,408 - INFO - Detection: ==================================================================
+2025-07-09 15:37:39,909 - INFO - Detection: 
+2025-07-09 15:37:40,410 - INFO - Detection: Starting integrated detection system...
+2025-07-09 15:37:40,911 - INFO - Detection: jetson.inference -- detectNet loading custom model '(null)'
+2025-07-09 15:41:27,981 - INFO - Detection: 
+2025-07-09 15:41:28,488 - INFO - Detection: detectNet -- loading detection network model from:
+2025-07-09 15:41:28,989 - INFO - Detection: -- model        networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff
+2025-07-09 15:41:29,490 - INFO - Detection: -- input_blob   'Input'
+2025-07-09 15:41:29,992 - INFO - Detection: -- output_blob  'NMS'
+2025-07-09 15:41:30,493 - INFO - Detection: -- output_count 'NMS_1'
+2025-07-09 15:41:30,994 - INFO - Detection: -- class_labels networks/SSD-Mobilenet-v2/ssd_coco_labels.txt
+2025-07-09 15:41:31,495 - INFO - Detection: -- threshold    0.500000
+2025-07-09 15:41:31,996 - INFO - Detection: -- batch_size   1
+2025-07-09 15:41:32,497 - INFO - Detection: 
+2025-07-09 15:41:32,998 - INFO - Detection: [TRT]    TensorRT version 8.5.2
+2025-07-09 15:41:33,500 - INFO - Detection: [TRT]    loading NVIDIA plugins...
+2025-07-09 15:41:34,001 - INFO - Detection: [TRT]    Registered plugin creator - ::BatchedNMSDynamic_TRT version 1
+2025-07-09 15:41:34,502 - INFO - Detection: [TRT]    Registered plugin creator - ::BatchedNMS_TRT version 1
+2025-07-09 15:41:35,003 - INFO - Detection: [TRT]    Registered plugin creator - ::BatchTilePlugin_TRT version 1
+2025-07-09 15:41:35,504 - INFO - Detection: [TRT]    Registered plugin creator - ::Clip_TRT version 1
+2025-07-09 15:41:36,005 - INFO - Detection: [TRT]    Registered plugin creator - ::CoordConvAC version 1
+2025-07-09 15:41:36,507 - INFO - Detection: [TRT]    Registered plugin creator - ::CropAndResizeDynamic version 1
+2025-07-09 15:41:37,008 - INFO - Detection: [TRT]    Registered plugin creator - ::CropAndResize version 1
+2025-07-09 15:41:37,509 - INFO - Detection: [TRT]    Registered plugin creator - ::DecodeBbox3DPlugin version 1
+2025-07-09 15:41:38,010 - INFO - Detection: [TRT]    Registered plugin creator - ::DetectionLayer_TRT version 1
+2025-07-09 15:41:38,512 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_Explicit_TF_TRT version 1
+2025-07-09 15:41:39,014 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_Implicit_TF_TRT version 1
+2025-07-09 15:41:39,515 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_ONNX_TRT version 1
+2025-07-09 15:41:40,017 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_TRT version 1
+2025-07-09 15:41:40,518 - INFO - Detection: [0;31m[TRT]    Could not register plugin creator -  ::FlattenConcat_TRT version 1
+2025-07-09 15:41:41,019 - INFO - Detection: [0m[TRT]    Registered plugin creator - ::GenerateDetection_TRT version 1
+2025-07-09 15:41:41,520 - INFO - Detection: [TRT]    Registered plugin creator - ::GridAnchor_TRT version 1
+2025-07-09 15:41:42,021 - INFO - Detection: [TRT]    Registered plugin creator - ::GridAnchorRect_TRT version 1
+2025-07-09 15:41:42,522 - INFO - Detection: [TRT]    Registered plugin creator - ::GroupNorm version 1
+2025-07-09 15:41:43,023 - INFO - Detection: [TRT]    Registered plugin creator - ::InstanceNormalization_TRT version 1
+2025-07-09 15:41:43,524 - INFO - Detection: [TRT]    Registered plugin creator - ::InstanceNormalization_TRT version 2
+2025-07-09 15:41:44,025 - INFO - Detection: [TRT]    Registered plugin creator - ::LayerNorm version 1
+2025-07-09 15:41:44,527 - INFO - Detection: [TRT]    Registered plugin creator - ::LReLU_TRT version 1
+2025-07-09 15:41:45,028 - INFO - Detection: [TRT]    Registered plugin creator - ::MultilevelCropAndResize_TRT version 1
+2025-07-09 15:41:45,529 - INFO - Detection: [TRT]    Registered plugin creator - ::MultilevelProposeROI_TRT version 1
+2025-07-09 15:41:46,030 - INFO - Detection: [TRT]    Registered plugin creator - ::MultiscaleDeformableAttnPlugin_TRT version 1
+2025-07-09 15:41:46,531 - INFO - Detection: [TRT]    Registered plugin creator - ::NMSDynamic_TRT version 1
+2025-07-09 15:41:47,032 - INFO - Detection: [TRT]    Registered plugin creator - ::NMS_TRT version 1
+2025-07-09 15:41:47,533 - INFO - Detection: [TRT]    Registered plugin creator - ::Normalize_TRT version 1
+2025-07-09 15:41:48,034 - INFO - Detection: [TRT]    Registered plugin creator - ::PillarScatterPlugin version 1
+2025-07-09 15:41:48,536 - INFO - Detection: [TRT]    Registered plugin creator - ::PriorBox_TRT version 1
+2025-07-09 15:41:49,037 - INFO - Detection: [TRT]    Registered plugin creator - ::ProposalDynamic version 1
+2025-07-09 15:41:49,538 - INFO - Detection: [TRT]    Registered plugin creator - ::ProposalLayer_TRT version 1
+2025-07-09 15:41:50,039 - INFO - Detection: [TRT]    Registered plugin creator - ::Proposal version 1
+2025-07-09 15:41:50,540 - INFO - Detection: [TRT]    Registered plugin creator - ::PyramidROIAlign_TRT version 1
+2025-07-09 15:41:51,041 - INFO - Detection: [TRT]    Registered plugin creator - ::Region_TRT version 1
+2025-07-09 15:41:51,543 - INFO - Detection: [TRT]    Registered plugin creator - ::Reorg_TRT version 1
+2025-07-09 15:41:52,044 - INFO - Detection: [TRT]    Registered plugin creator - ::ResizeNearest_TRT version 1
+2025-07-09 15:41:52,545 - INFO - Detection: [TRT]    Registered plugin creator - ::ROIAlign_TRT version 1
+2025-07-09 15:41:53,046 - INFO - Detection: [TRT]    Registered plugin creator - ::RPROI_TRT version 1
+2025-07-09 15:41:53,548 - INFO - Detection: [TRT]    Registered plugin creator - ::ScatterND version 1
+2025-07-09 15:41:54,049 - INFO - Detection: [TRT]    Registered plugin creator - ::SeqLen2Spatial version 1
+2025-07-09 15:41:54,550 - INFO - Detection: [TRT]    Registered plugin creator - ::SpecialSlice_TRT version 1
+2025-07-09 15:41:55,051 - INFO - Detection: [TRT]    Registered plugin creator - ::SplitGeLU version 1
+2025-07-09 15:41:55,552 - INFO - Detection: [TRT]    Registered plugin creator - ::Split version 1
+2025-07-09 15:41:56,053 - INFO - Detection: [TRT]    Registered plugin creator - ::VoxelGeneratorPlugin version 1
+2025-07-09 15:41:56,555 - INFO - Detection: [TRT]    completed loading NVIDIA plugins.
+2025-07-09 15:41:57,055 - INFO - Detection: [TRT]    detected model format - UFF  (extension '.uff')
+2025-07-09 15:41:57,556 - INFO - Detection: [TRT]    desired precision specified for GPU: FASTEST
+2025-07-09 15:41:58,058 - INFO - Detection: [0;33m[TRT]    requested fasted precision for device GPU without providing valid calibrator, disabling INT8
+2025-07-09 15:41:58,559 - INFO - Detection: [0m[TRT]    [MemUsageChange] Init CUDA: CPU +241, GPU +0, now: CPU 331, GPU 2943 (MiB)
+2025-07-09 15:41:59,060 - INFO - Detection: [TRT]    Trying to load shared library libnvinfer_builder_resource.so.8.5.2
+2025-07-09 15:41:59,561 - INFO - Detection: [TRT]    Loaded shared library libnvinfer_builder_resource.so.8.5.2
+2025-07-09 15:42:00,062 - INFO - Detection: [TRT]    [MemUsageChange] Init builder kernel library: CPU +302, GPU +284, now: CPU 656, GPU 3248 (MiB)
+2025-07-09 15:42:00,563 - INFO - Detection: [TRT]    native precisions detected for GPU:  FP32, FP16, INT8
+2025-07-09 15:42:01,064 - INFO - Detection: [TRT]    selecting fastest native precision for GPU:  FP16
+2025-07-09 15:42:01,565 - INFO - Detection: [TRT]    found engine cache file /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.1.1.8502.GPU.FP16.engine
+2025-07-09 15:42:02,066 - INFO - Detection: [TRT]    found model checksum /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.sha256sum
+2025-07-09 15:42:02,567 - INFO - Detection: [TRT]    echo "$(cat /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.sha256sum) /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff" | sha256sum --check --status
+2025-07-09 15:42:03,069 - INFO - Detection: [TRT]    model matched checksum /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.sha256sum
+2025-07-09 15:42:03,570 - INFO - Detection: [TRT]    loading network plan from engine cache... /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.1.1.8502.GPU.FP16.engine
+2025-07-09 15:42:04,071 - INFO - Detection: [0;32m[TRT]    device GPU, loaded /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff
+2025-07-09 15:42:04,572 - INFO - Detection: [0m[TRT]    Loaded engine size: 33 MiB
+2025-07-09 15:42:05,073 - INFO - Detection: [0;33m[TRT]    Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+2025-07-09 15:42:05,575 - INFO - Detection: [0m[TRT]    Trying to load shared library libcublas.so.11
+2025-07-09 15:42:06,076 - INFO - Detection: [TRT]    Loaded shared library libcublas.so.11
+2025-07-09 15:42:06,577 - INFO - Detection: [TRT]    Using cublas as plugin tactic source
+2025-07-09 15:42:07,078 - INFO - Detection: [TRT]    Trying to load shared library libcublasLt.so.11
+2025-07-09 15:42:07,579 - INFO - Detection: [TRT]    Loaded shared library libcublasLt.so.11
+2025-07-09 15:42:08,081 - INFO - Detection: [TRT]    Using cublasLt as core library tactic source
+2025-07-09 15:42:08,582 - INFO - Detection: [TRT]    [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +534, GPU +385, now: CPU 946, GPU 3671 (MiB)
+2025-07-09 15:42:09,083 - INFO - Detection: [TRT]    Trying to load shared library libcudnn.so.8
+2025-07-09 15:42:09,584 - INFO - Detection: [TRT]    Loaded shared library libcudnn.so.8
+2025-07-09 15:42:10,085 - INFO - Detection: [TRT]    Using cuDNN as plugin tactic source
+2025-07-09 15:42:10,586 - INFO - Detection: [TRT]    Using cuDNN as core library tactic source
+2025-07-09 15:42:11,087 - INFO - Detection: [TRT]    [MemUsageChange] Init cuDNN: CPU +82, GPU +41, now: CPU 1028, GPU 3712 (MiB)
+2025-07-09 15:42:11,589 - INFO - Detection: [TRT]    Deserialization required 1375126 microseconds.
+2025-07-09 15:42:12,090 - INFO - Detection: [TRT]    [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +32, now: CPU 0, GPU 32 (MiB)
+2025-07-09 15:42:12,591 - INFO - Detection: [TRT]    Trying to load shared library libcublas.so.11
+2025-07-09 15:42:13,092 - INFO - Detection: [TRT]    Loaded shared library libcublas.so.11
+2025-07-09 15:42:13,593 - INFO - Detection: [TRT]    Using cublas as plugin tactic source
+2025-07-09 15:42:14,094 - INFO - Detection: [TRT]    Trying to load shared library libcublasLt.so.11
+2025-07-09 15:42:14,596 - INFO - Detection: [TRT]    Loaded shared library libcublasLt.so.11
+2025-07-09 15:42:15,097 - INFO - Detection: [TRT]    Using cublasLt as core library tactic source
+2025-07-09 15:42:15,598 - INFO - Detection: [TRT]    [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +0, now: CPU 1029, GPU 3712 (MiB)
+2025-07-09 15:42:16,099 - INFO - Detection: [TRT]    Trying to load shared library libcudnn.so.8
+2025-07-09 15:42:16,600 - INFO - Detection: [TRT]    Loaded shared library libcudnn.so.8
+2025-07-09 15:42:17,101 - INFO - Detection: [TRT]    Using cuDNN as plugin tactic source
+2025-07-09 15:42:17,602 - INFO - Detection: [TRT]    Using cuDNN as core library tactic source
+2025-07-09 15:42:18,103 - INFO - Detection: [TRT]    [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 1029, GPU 3712 (MiB)
+2025-07-09 15:42:18,606 - INFO - Detection: [TRT]    Total per-runner device persistent memory is 3072
+2025-07-09 15:42:19,107 - INFO - Detection: [TRT]    Total per-runner host persistent memory is 160912
+2025-07-09 15:42:19,609 - INFO - Detection: [TRT]    Allocated activation device memory of size 7004672
+2025-07-09 15:42:20,110 - INFO - Detection: [TRT]    [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +7, now: CPU 0, GPU 39 (MiB)
+2025-07-09 15:42:20,611 - INFO - Detection: [TRT]
+2025-07-09 15:42:21,112 - INFO - Detection: [TRT]    CUDA engine context initialized on device GPU:
+2025-07-09 15:42:21,613 - INFO - Detection: [TRT]       -- layers       105
+2025-07-09 15:42:22,114 - INFO - Detection: [TRT]       -- maxBatchSize 1
+2025-07-09 15:42:22,615 - INFO - Detection: [TRT]       -- deviceMemory 7004672
+2025-07-09 15:42:23,117 - INFO - Detection: [TRT]       -- bindings     3
+2025-07-09 15:42:23,618 - INFO - Detection: [TRT]       binding 0
+2025-07-09 15:42:24,119 - INFO - Detection: -- index   0
+2025-07-09 15:42:24,620 - INFO - Detection: -- name    'Input'
+2025-07-09 15:42:25,121 - INFO - Detection: -- type    FP32
+2025-07-09 15:42:25,623 - INFO - Detection: -- in/out  INPUT
+2025-07-09 15:42:26,124 - INFO - Detection: -- # dims  3
+2025-07-09 15:42:26,625 - INFO - Detection: -- dim #0  3
+2025-07-09 15:42:27,126 - INFO - Detection: -- dim #1  300
+2025-07-09 15:42:27,627 - INFO - Detection: -- dim #2  300
+2025-07-09 15:42:28,129 - INFO - Detection: [TRT]       binding 1
+2025-07-09 15:42:28,631 - INFO - Detection: -- index   1
+2025-07-09 15:42:29,133 - INFO - Detection: -- name    'NMS'
+2025-07-09 15:42:29,634 - INFO - Detection: -- type    FP32
+2025-07-09 15:42:30,136 - INFO - Detection: -- in/out  OUTPUT
+2025-07-09 15:42:30,639 - INFO - Detection: -- # dims  3
+2025-07-09 15:42:31,141 - INFO - Detection: -- dim #0  1
+2025-07-09 15:42:31,642 - INFO - Detection: -- dim #1  100
+2025-07-09 15:42:32,143 - INFO - Detection: -- dim #2  7
+2025-07-09 15:42:32,645 - INFO - Detection: [TRT]       binding 2
+2025-07-09 15:42:33,146 - INFO - Detection: -- index   2
+2025-07-09 15:42:33,647 - INFO - Detection: -- name    'NMS_1'
+2025-07-09 15:42:34,148 - INFO - Detection: -- type    FP32
+2025-07-09 15:42:34,649 - INFO - Detection: -- in/out  OUTPUT
+2025-07-09 15:42:35,151 - INFO - Detection: -- # dims  3
+2025-07-09 15:42:35,652 - INFO - Detection: -- dim #0  1
+2025-07-09 15:42:36,153 - INFO - Detection: -- dim #1  1
+2025-07-09 15:42:36,654 - INFO - Detection: -- dim #2  1
+2025-07-09 15:42:37,156 - INFO - Detection: [TRT]
+2025-07-09 15:42:37,657 - INFO - Detection: [TRT]    binding to input 0 Input  binding index:  0
+2025-07-09 15:42:38,158 - INFO - Detection: [TRT]    binding to input 0 Input  dims (b=1 c=3 h=300 w=300) size=1080000
+2025-07-09 15:42:38,659 - INFO - Detection: [TRT]    binding to pygame 2.6.1 (SDL 2.28.4, Python 3.8.10)

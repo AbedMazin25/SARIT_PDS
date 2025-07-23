@@ -1,0 +1,20 @@
+[Unit]
+Description=OAK-D Detection System Watchdog
+After=graphical.target network.target
+Wants=graphical.target
+
+[Service]
+Type=simple
+User=ods
+Group=ods
+WorkingDirectory=/home/ods/Desktop/sarit/DEMODAY
+ExecStart=/usr/bin/python3 /home/ods/Desktop/sarit/DEMODAY/watchdog_service.py --script-path /home/ods/Desktop/sarit/DEMODAY/run_integrated_detection_system.sh
+Environment=DISPLAY=:0
+Environment=PULSE_RUNTIME_PATH=/run/user/1000/pulse
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=graphical.target 

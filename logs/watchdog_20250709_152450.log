@@ -1,0 +1,174 @@
+2025-07-09 15:24:50,150 - INFO - Watchdog service initialized
+2025-07-09 15:24:50,150 - INFO - Target script: /home/ods/Desktop/sarit/DEMODAY/run_integrated_detection_system.sh
+2025-07-09 15:24:50,150 - INFO - Camera only mode: True
+2025-07-09 15:24:50,150 - INFO - Restart delay: 5s
+2025-07-09 15:24:50,150 - INFO - Max restarts: unlimited
+2025-07-09 15:24:50,151 - INFO - Starting watchdog service...
+2025-07-09 15:24:50,151 - INFO - Starting detection system: /home/ods/Desktop/sarit/DEMODAY/run_integrated_detection_system.sh --camera-only
+2025-07-09 15:24:50,155 - INFO - Detection system started with PID: 4305
+2025-07-09 15:24:50,158 - INFO - Detection: Checking dependencies...
+2025-07-09 15:24:53,662 - INFO - Detection: All dependencies verified.
+2025-07-09 15:24:57,169 - INFO - Detection: 
+2025-07-09 15:24:57,674 - INFO - Detection: ==================================================================
+2025-07-09 15:24:58,175 - INFO - Detection: INTEGRATED OAK-D DETECTION SYSTEM
+2025-07-09 15:24:58,677 - INFO - Detection: ==================================================================
+2025-07-09 15:24:59,179 - INFO - Detection: Date: Wed 09 Jul 2025 03:24:53 PM EDT
+2025-07-09 15:24:59,681 - INFO - Detection: System: Linux ods-desktop 5.10.192-tegra #1 SMP PREEMPT Mon Feb 19 20:19:53 PST 2024 aarch64 aarch64 aarch64 GNU/Linux
+2025-07-09 15:25:00,182 - INFO - Detection: Python: Python 3.8.10
+2025-07-09 15:25:00,683 - INFO - Detection: Working Directory: /home/ods/Desktop/sarit/DEMODAY
+2025-07-09 15:25:01,185 - INFO - Detection: 
+2025-07-09 15:25:01,687 - INFO - Detection: Configuration:
+2025-07-09 15:25:02,188 - INFO - Detection: • Detection Model: ssd-mobilenet-v2
+2025-07-09 15:25:02,689 - INFO - Detection: • Sound Alerts: ENABLED
+2025-07-09 15:25:03,190 - INFO - Detection: • Visual Display: ENABLED
+2025-07-09 15:25:03,691 - INFO - Detection: • Emulator Communication: DISABLED
+2025-07-09 15:25:04,192 - INFO - Detection: ==================================================================
+2025-07-09 15:25:04,694 - INFO - Detection: 
+2025-07-09 15:25:05,195 - INFO - Detection: Starting integrated detection system...
+2025-07-09 15:25:05,696 - INFO - Detection: jetson.inference -- detectNet loading custom model '(null)'
+2025-07-09 15:25:06,198 - INFO - Detection: 
+2025-07-09 15:25:06,699 - INFO - Detection: detectNet -- loading detection network model from:
+2025-07-09 15:25:07,200 - INFO - Detection: -- model        networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff
+2025-07-09 15:25:07,702 - INFO - Detection: -- input_blob   'Input'
+2025-07-09 15:25:08,203 - INFO - Detection: -- output_blob  'NMS'
+2025-07-09 15:25:08,704 - INFO - Detection: -- output_count 'NMS_1'
+2025-07-09 15:25:09,205 - INFO - Detection: -- class_labels networks/SSD-Mobilenet-v2/ssd_coco_labels.txt
+2025-07-09 15:25:09,706 - INFO - Detection: -- threshold    0.500000
+2025-07-09 15:25:10,208 - INFO - Detection: -- batch_size   1
+2025-07-09 15:25:10,709 - INFO - Detection: 
+2025-07-09 15:25:11,211 - INFO - Detection: [TRT]    TensorRT version 8.5.2
+2025-07-09 15:25:11,714 - INFO - Detection: [TRT]    loading NVIDIA plugins...
+2025-07-09 15:25:12,215 - INFO - Detection: [TRT]    Registered plugin creator - ::BatchedNMSDynamic_TRT version 1
+2025-07-09 15:25:12,717 - INFO - Detection: [TRT]    Registered plugin creator - ::BatchedNMS_TRT version 1
+2025-07-09 15:25:13,218 - INFO - Detection: [TRT]    Registered plugin creator - ::BatchTilePlugin_TRT version 1
+2025-07-09 15:25:13,719 - INFO - Detection: [TRT]    Registered plugin creator - ::Clip_TRT version 1
+2025-07-09 15:25:14,221 - INFO - Detection: [TRT]    Registered plugin creator - ::CoordConvAC version 1
+2025-07-09 15:25:14,722 - INFO - Detection: [TRT]    Registered plugin creator - ::CropAndResizeDynamic version 1
+2025-07-09 15:25:15,224 - INFO - Detection: [TRT]    Registered plugin creator - ::CropAndResize version 1
+2025-07-09 15:25:15,727 - INFO - Detection: [TRT]    Registered plugin creator - ::DecodeBbox3DPlugin version 1
+2025-07-09 15:25:16,229 - INFO - Detection: [TRT]    Registered plugin creator - ::DetectionLayer_TRT version 1
+2025-07-09 15:25:16,730 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_Explicit_TF_TRT version 1
+2025-07-09 15:25:17,232 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_Implicit_TF_TRT version 1
+2025-07-09 15:25:17,733 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_ONNX_TRT version 1
+2025-07-09 15:25:18,235 - INFO - Detection: [TRT]    Registered plugin creator - ::EfficientNMS_TRT version 1
+2025-07-09 15:25:18,738 - INFO - Detection: [0;31m[TRT]    Could not register plugin creator -  ::FlattenConcat_TRT version 1
+2025-07-09 15:25:19,239 - INFO - Detection: [0m[TRT]    Registered plugin creator - ::GenerateDetection_TRT version 1
+2025-07-09 15:25:19,740 - INFO - Detection: [TRT]    Registered plugin creator - ::GridAnchor_TRT version 1
+2025-07-09 15:25:20,241 - INFO - Detection: [TRT]    Registered plugin creator - ::GridAnchorRect_TRT version 1
+2025-07-09 15:25:20,742 - INFO - Detection: [TRT]    Registered plugin creator - ::GroupNorm version 1
+2025-07-09 15:25:21,244 - INFO - Detection: [TRT]    Registered plugin creator - ::InstanceNormalization_TRT version 1
+2025-07-09 15:25:21,745 - INFO - Detection: [TRT]    Registered plugin creator - ::InstanceNormalization_TRT version 2
+2025-07-09 15:25:22,246 - INFO - Detection: [TRT]    Registered plugin creator - ::LayerNorm version 1
+2025-07-09 15:25:22,747 - INFO - Detection: [TRT]    Registered plugin creator - ::LReLU_TRT version 1
+2025-07-09 15:25:23,248 - INFO - Detection: [TRT]    Registered plugin creator - ::MultilevelCropAndResize_TRT version 1
+2025-07-09 15:25:23,750 - INFO - Detection: [TRT]    Registered plugin creator - ::MultilevelProposeROI_TRT version 1
+2025-07-09 15:25:24,251 - INFO - Detection: [TRT]    Registered plugin creator - ::MultiscaleDeformableAttnPlugin_TRT version 1
+2025-07-09 15:25:24,753 - INFO - Detection: [TRT]    Registered plugin creator - ::NMSDynamic_TRT version 1
+2025-07-09 15:25:25,255 - INFO - Detection: [TRT]    Registered plugin creator - ::NMS_TRT version 1
+2025-07-09 15:25:25,757 - INFO - Detection: [TRT]    Registered plugin creator - ::Normalize_TRT version 1
+2025-07-09 15:25:26,258 - INFO - Detection: [TRT]    Registered plugin creator - ::PillarScatterPlugin version 1
+2025-07-09 15:25:26,761 - INFO - Detection: [TRT]    Registered plugin creator - ::PriorBox_TRT version 1
+2025-07-09 15:25:27,264 - INFO - Detection: [TRT]    Registered plugin creator - ::ProposalDynamic version 1
+2025-07-09 15:25:27,766 - INFO - Detection: [TRT]    Registered plugin creator - ::ProposalLayer_TRT version 1
+2025-07-09 15:25:28,266 - INFO - Detection: [TRT]    Registered plugin creator - ::Proposal version 1
+2025-07-09 15:25:28,767 - INFO - Detection: [TRT]    Registered plugin creator - ::PyramidROIAlign_TRT version 1
+2025-07-09 15:25:29,268 - INFO - Detection: [TRT]    Registered plugin creator - ::Region_TRT version 1
+2025-07-09 15:25:29,769 - INFO - Detection: [TRT]    Registered plugin creator - ::Reorg_TRT version 1
+2025-07-09 15:25:30,271 - INFO - Detection: [TRT]    Registered plugin creator - ::ResizeNearest_TRT version 1
+2025-07-09 15:25:30,772 - INFO - Detection: [TRT]    Registered plugin creator - ::ROIAlign_TRT version 1
+2025-07-09 15:25:31,273 - INFO - Detection: [TRT]    Registered plugin creator - ::RPROI_TRT version 1
+2025-07-09 15:25:31,774 - INFO - Detection: [TRT]    Registered plugin creator - ::ScatterND version 1
+2025-07-09 15:25:32,275 - INFO - Detection: [TRT]    Registered plugin creator - ::SeqLen2Spatial version 1
+2025-07-09 15:25:32,776 - INFO - Detection: [TRT]    Registered plugin creator - ::SpecialSlice_TRT version 1
+2025-07-09 15:25:33,277 - INFO - Detection: [TRT]    Registered plugin creator - ::SplitGeLU version 1
+2025-07-09 15:25:33,778 - INFO - Detection: [TRT]    Registered plugin creator - ::Split version 1
+2025-07-09 15:25:34,278 - INFO - Detection: [TRT]    Registered plugin creator - ::VoxelGeneratorPlugin version 1
+2025-07-09 15:25:34,780 - INFO - Detection: [TRT]    completed loading NVIDIA plugins.
+2025-07-09 15:25:35,281 - INFO - Detection: [TRT]    detected model format - UFF  (extension '.uff')
+2025-07-09 15:25:35,782 - INFO - Detection: [TRT]    desired precision specified for GPU: FASTEST
+2025-07-09 15:25:36,284 - INFO - Detection: [0;33m[TRT]    requested fasted precision for device GPU without providing valid calibrator, disabling INT8
+2025-07-09 15:25:36,786 - INFO - Detection: [0m[TRT]    [MemUsageChange] Init CUDA: CPU +241, GPU +0, now: CPU 331, GPU 3609 (MiB)
+2025-07-09 15:25:37,287 - INFO - Detection: [TRT]    Trying to load shared library libnvinfer_builder_resource.so.8.5.2
+2025-07-09 15:25:37,789 - INFO - Detection: [TRT]    Loaded shared library libnvinfer_builder_resource.so.8.5.2
+2025-07-09 15:25:38,291 - INFO - Detection: [TRT]    [MemUsageChange] Init builder kernel library: CPU +302, GPU +449, now: CPU 656, GPU 4078 (MiB)
+2025-07-09 15:25:38,792 - INFO - Detection: [TRT]    native precisions detected for GPU:  FP32, FP16, INT8
+2025-07-09 15:25:39,293 - INFO - Detection: [TRT]    selecting fastest native precision for GPU:  FP16
+2025-07-09 15:25:39,796 - INFO - Detection: [TRT]    found engine cache file /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.1.1.8502.GPU.FP16.engine
+2025-07-09 15:25:40,297 - INFO - Detection: [TRT]    found model checksum /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.sha256sum
+2025-07-09 15:25:40,799 - INFO - Detection: [TRT]    echo "$(cat /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.sha256sum) /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff" | sha256sum --check --status
+2025-07-09 15:25:41,300 - INFO - Detection: [TRT]    model matched checksum /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.sha256sum
+2025-07-09 15:25:41,801 - INFO - Detection: [TRT]    loading network plan from engine cache... /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.1.1.8502.GPU.FP16.engine
+2025-07-09 15:25:42,303 - INFO - Detection: [0;32m[TRT]    device GPU, loaded /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff
+2025-07-09 15:25:42,805 - INFO - Detection: [0m[TRT]    Loaded engine size: 33 MiB
+2025-07-09 15:25:43,306 - INFO - Detection: [0;33m[TRT]    Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+2025-07-09 15:25:43,808 - INFO - Detection: [0m[TRT]    Trying to load shared library libcublas.so.11
+2025-07-09 15:25:44,309 - INFO - Detection: [TRT]    Loaded shared library libcublas.so.11
+2025-07-09 15:25:44,811 - INFO - Detection: [TRT]    Using cublas as plugin tactic source
+2025-07-09 15:25:45,312 - INFO - Detection: [TRT]    Trying to load shared library libcublasLt.so.11
+2025-07-09 15:25:45,813 - INFO - Detection: [TRT]    Loaded shared library libcublasLt.so.11
+2025-07-09 15:25:46,315 - INFO - Detection: [TRT]    Using cublasLt as core library tactic source
+2025-07-09 15:25:46,816 - INFO - Detection: [TRT]    [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +534, GPU +478, now: CPU 946, GPU 4526 (MiB)
+2025-07-09 15:25:47,318 - INFO - Detection: [TRT]    Trying to load shared library libcudnn.so.8
+2025-07-09 15:25:47,820 - INFO - Detection: [TRT]    Loaded shared library libcudnn.so.8
+2025-07-09 15:25:48,322 - INFO - Detection: [TRT]    Using cuDNN as plugin tactic source
+2025-07-09 15:25:48,824 - INFO - Detection: [TRT]    Using cuDNN as core library tactic source
+2025-07-09 15:25:49,326 - INFO - Detection: [TRT]    [MemUsageChange] Init cuDNN: CPU +82, GPU +98, now: CPU 1028, GPU 4624 (MiB)
+2025-07-09 15:25:49,828 - INFO - Detection: [TRT]    Deserialization required 2185071 microseconds.
+2025-07-09 15:25:50,330 - INFO - Detection: [TRT]    [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +32, now: CPU 0, GPU 32 (MiB)
+2025-07-09 15:25:50,832 - INFO - Detection: [TRT]    Trying to load shared library libcublas.so.11
+2025-07-09 15:25:51,333 - INFO - Detection: [TRT]    Loaded shared library libcublas.so.11
+2025-07-09 15:25:51,835 - INFO - Detection: [TRT]    Using cublas as plugin tactic source
+2025-07-09 15:25:52,337 - INFO - Detection: [TRT]    Trying to load shared library libcublasLt.so.11
+2025-07-09 15:25:52,839 - INFO - Detection: [TRT]    Loaded shared library libcublasLt.so.11
+2025-07-09 15:25:53,340 - INFO - Detection: [TRT]    Using cublasLt as core library tactic source
+2025-07-09 15:25:53,841 - INFO - Detection: [TRT]    [MemUsageChange] Init cuBLAS/cuBLASLt: CPU +0, GPU +4, now: CPU 1029, GPU 4644 (MiB)
+2025-07-09 15:25:54,342 - INFO - Detection: [TRT]    Trying to load shared library libcudnn.so.8
+2025-07-09 15:25:54,844 - INFO - Detection: [TRT]    Loaded shared library libcudnn.so.8
+2025-07-09 15:25:55,346 - INFO - Detection: [TRT]    Using cuDNN as plugin tactic source
+2025-07-09 15:25:55,848 - INFO - Detection: [TRT]    Using cuDNN as core library tactic source
+2025-07-09 15:25:56,350 - INFO - Detection: [TRT]    [MemUsageChange] Init cuDNN: CPU +0, GPU +0, now: CPU 1029, GPU 4644 (MiB)
+2025-07-09 15:25:56,852 - INFO - Detection: [TRT]    Total per-runner device persistent memory is 3072
+2025-07-09 15:25:57,353 - INFO - Detection: [TRT]    Total per-runner host persistent memory is 160912
+2025-07-09 15:25:57,854 - INFO - Detection: [TRT]    Allocated activation device memory of size 7004672
+2025-07-09 15:25:58,356 - INFO - Detection: [TRT]    [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +7, now: CPU 0, GPU 39 (MiB)
+2025-07-09 15:25:58,858 - INFO - Detection: [TRT]
+2025-07-09 15:25:59,360 - INFO - Detection: [TRT]    CUDA engine context initialized on device GPU:
+2025-07-09 15:25:59,861 - INFO - Detection: [TRT]       -- layers       105
+2025-07-09 15:26:00,362 - INFO - Detection: [TRT]       -- maxBatchSize 1
+2025-07-09 15:26:00,863 - INFO - Detection: [TRT]       -- deviceMemory 7004672
+2025-07-09 15:26:01,364 - INFO - Detection: [TRT]       -- bindings     3
+2025-07-09 15:26:01,866 - INFO - Detection: [TRT]       binding 0
+2025-07-09 15:26:02,367 - INFO - Detection: -- index   0
+2025-07-09 15:26:02,869 - INFO - Detection: -- name    'Input'
+2025-07-09 15:26:03,370 - INFO - Detection: -- type    FP32
+2025-07-09 15:26:03,871 - INFO - Detection: -- in/out  INPUT
+2025-07-09 15:26:04,372 - INFO - Detection: -- # dims  3
+2025-07-09 15:26:04,874 - INFO - Detection: -- dim #0  3
+2025-07-09 15:26:05,375 - INFO - Detection: -- dim #1  300
+2025-07-09 15:26:05,878 - INFO - Detection: -- dim #2  300
+2025-07-09 15:26:06,379 - INFO - Detection: [TRT]       binding 1
+2025-07-09 15:26:06,882 - INFO - Detection: -- index   1
+2025-07-09 15:26:07,383 - INFO - Detection: -- name    'NMS'
+2025-07-09 15:26:07,885 - INFO - Detection: -- type    FP32
+2025-07-09 15:26:08,387 - INFO - Detection: -- in/out  OUTPUT
+2025-07-09 15:26:08,889 - INFO - Detection: -- # dims  3
+2025-07-09 15:26:09,390 - INFO - Detection: -- dim #0  1
+2025-07-09 15:26:09,892 - INFO - Detection: -- dim #1  100
+2025-07-09 15:26:10,393 - INFO - Detection: -- dim #2  7
+2025-07-09 15:26:10,895 - INFO - Detection: [TRT]       binding 2
+2025-07-09 15:26:11,396 - INFO - Detection: -- index   2
+2025-07-09 15:26:11,897 - INFO - Detection: -- name    'NMS_1'
+2025-07-09 15:26:12,398 - INFO - Detection: -- type    FP32
+2025-07-09 15:26:12,899 - INFO - Detection: -- in/out  OUTPUT
+2025-07-09 15:26:13,400 - INFO - Detection: -- # dims  3
+2025-07-09 15:26:13,901 - INFO - Detection: -- dim #0  1
+2025-07-09 15:26:14,403 - INFO - Detection: -- dim #1  1
+2025-07-09 15:26:14,904 - INFO - Detection: -- dim #2  1
+2025-07-09 15:26:15,405 - INFO - Detection: [TRT]
+2025-07-09 15:26:15,906 - INFO - Detection: [TRT]    binding to input 0 Input  binding index:  0
+2025-07-09 15:26:16,407 - INFO - Detection: [TRT]    binding to input 0 Input  dims (b=1 c=3 h=300 w=300) size=1080000
+2025-07-09 15:26:16,909 - INFO - Detection: [TRT]    binding to output 0 NMS  binding index:  1
+2025-07-09 15:27:35,039 - INFO - Received signal 15, shutting down...
+2025-07-09 15:27:35,044 - INFO - Stopping detection system (PID: 4305)...
+2025-07-09 15:27:35,044 - INFO - Detection system stopped
+2025-07-09 15:27:35,514 - INFO - Watchdog service stopped
